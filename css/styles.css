@@ -146,7 +146,7 @@ header {
 }
 #sec-hero h1 {
   color: #fff;
-  font-size: clamp(2rem, 1.75rem + 2vw, 4rem);
+  font-size: clamp(2rem, 1.5rem + 2vw, 4rem);
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: bold;
   transform: skew(-9deg, 0deg);
@@ -155,8 +155,8 @@ header {
   width: 50%;
 }
 .hero-chip-img {
-  flex: 1 0 45%;
-  max-width: 500px;
+  flex: 1 0 35%;
+  max-width: 400px;
 }
 .inner-wrapper {
   display: flex;
@@ -207,8 +207,8 @@ main h2 {
 .product-lineup li img {
   margin: 0 auto;
   /* margin-bottom: 1rem; */
-  width: 85%;
-  max-width: 210px;
+  width: 80%;
+  max-width: 180px;
 }
 .product-lineup li span {
   display: inline-block;
@@ -264,6 +264,7 @@ main h2 {
   font-size: clamp(1.25rem, 1.5rem + 1vw, 1.75rem);
   font-weight: bold;
   text-decoration: none;
+  text-align: center;
   transition: .3s linear;
   width: 100%;
   display: inline-block;
@@ -293,6 +294,8 @@ main h2 {
 }
 .ecode-txt-inner {
   display: flex; 
+  font-size: clamp(1rem, 1rem + 1vw, 1.25rem);
+  font-weight: bold;
   flex-direction: column;
   justify-content: center;
   height: 100%;
@@ -302,6 +305,9 @@ main h2 {
   color: var(--blue-darker);
   font-weight: bold;
   text-decoration: underline;
+}
+.ecode-txt a:hover {
+  text-decoration: none;
 }
 .ecode-arrow {
   flex: 0 0 auto;
@@ -319,7 +325,7 @@ main h2 {
 .ecode-num span {
   color: var(--orange);
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   text-align: center;
 }
 
@@ -351,6 +357,7 @@ footer {
 .social-links ul {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 .social-links ul li {
   float: left;
@@ -391,7 +398,8 @@ footer {
   }
   #sec-hero h1 {
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1.65rem;
+    transform: none;
   }
   .hero-chip-img {
     width: 60%;
@@ -410,9 +418,10 @@ footer {
   }
   .show-info-div:not(:last-child) {
     border-right: none !important;
+  }
+  .show-info-div:first-child {
     border-bottom: 1px solid #777;
   }
-
 }
 @media (max-width: 640px) {
   .header-inner {
@@ -427,5 +436,19 @@ footer {
   }
   .product-lineup li img {
     max-width: 170px;
+  }
+  .ecode-wrapper {
+    display: block;
+    max-height: max-content;
+    font-size: .9rem;
+  }
+  .ecode-arrow {
+    display: none;
+  }
+  .ecode-txt-inner  {
+    padding-left: 0;
+  }
+  .ecode-txt-inner p {
+    font-size: 1.1rem;
   }
 }
