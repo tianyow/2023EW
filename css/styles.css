@@ -1,4 +1,5 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
 
 /* Colors */
 :root {
@@ -147,9 +148,9 @@ header {
 }
 #sec-hero h1 {
   color: #fff;
-  font-size: clamp(2rem, 1.5rem + 2vw, 4rem);
+  font-size: clamp(1.65rem, -0.067rem + 3.05vw, 2.375rem);
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  font-weight: 900;
   transform: skew(-9deg, 0deg);
   filter: drop-shadow(0 0 10px rgba(255,255,255,.9));
   letter-spacing: 3px;
@@ -253,7 +254,7 @@ main h2 {
   border-right: 1px solid #777;
 }
 .show-info-div .context.large {
-  font-size: clamp(2rem, 1.5rem + 2.5vw, 2.25rem);
+  font-size: clamp(1.5rem, -0.276rem + 3.16vw, 2.25rem);
   font-weight: bold;
 }
 .show-info-div .context.yellow {
@@ -298,12 +299,12 @@ main h2 {
 }
 .ecode-txt-inner {
   display: flex; 
-  font-size: clamp(1rem, 1rem + 1vw, 1.25rem);
-  font-weight: bold;
+  font-size: clamp(1.05rem, 0.658rem + 1.05vw, 1.5rem);
+  font-weight: 500;
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  padding-left: 10%;
+  padding-left: 8%;
 }
 .ecode-txt a {
   color: var(--blue-darker);
@@ -314,7 +315,7 @@ main h2 {
   text-decoration: none;
 }
 .ecode-txt .notes {
-  font-size: 1rem;
+  font-size: .95rem;
   color: #555;
 }
 .ecode-arrow {
@@ -406,7 +407,7 @@ footer {
   }
   #sec-hero h1 {
     width: 100%;
-    font-size: 1.65rem;
+    /* font-size: 1.65rem; */
     transform: none;
   }
   .hero-chip-img {
