@@ -304,7 +304,7 @@ main h2 {
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  padding-left: 8%;
+  padding-left: 6%;
 }
 .ecode-txt a {
   color: var(--blue-darker);
@@ -327,14 +327,14 @@ main h2 {
 }
 .ecode-num {
   color: #ccc;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   padding-left: 2rem;
   align-self: center;
 }
 .ecode-num span {
   color: var(--orange);
   font-weight: bold;
-  font-size: clamp(1.75rem, 1.457rem + 1.3vw, 2.5rem);
+  font-size: clamp(1.75rem, 1.457rem + 1.3vw, 2rem);
   text-align: center;
 }
 
