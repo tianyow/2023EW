@@ -108,7 +108,7 @@ a:not([class])  {
 /* HEADER
 ---------------------------------- */
 header {
-  background: linear-gradient(180deg, black, transparent);
+  background: linear-gradient(to bottom, var(--blue-darker) 50%, transparent);
   position: fixed;
   top: 0;
   width: 100%;
@@ -137,6 +137,7 @@ header {
 #sec-hero {
   background: no-repeat var(--blue-darker) url(../images/header-bkg-img.jpg) center center;
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -163,6 +164,7 @@ header {
   flex-direction: column;
   background: #0c1115;
   color: #fff;
+  padding-top: 2rem;
 }
 main {
   margin: 0 auto;
@@ -268,10 +270,12 @@ main h2 {
   transition: .3s linear;
   width: 100%;
   display: inline-block;
+  box-shadow : -5px 5px 0 0 var(--blue-light);
 }
 .btn-register:hover {
   background: #fff;
   color: var(--blue-dark);
+  box-shadow : 0px 0px 0 0 var(--blue-light);
 }
 
 /* SHOW-REGISTER
@@ -308,6 +312,10 @@ main h2 {
 }
 .ecode-txt a:hover {
   text-decoration: none;
+}
+.ecode-txt .notes {
+  font-size: 1rem;
+  color: #555;
 }
 .ecode-arrow {
   flex: 0 0 auto;
@@ -422,6 +430,9 @@ footer {
   .show-info-div:first-child {
     border-bottom: 1px solid #777;
   }
+  .btn-register {
+    margin-bottom: 0.5rem;
+  }
 }
 @media (max-width: 640px) {
   .header-inner {
@@ -445,10 +456,26 @@ footer {
   .ecode-arrow {
     display: none;
   }
+  .ecode-num {
+    margin-top: 1rem;
+    padding-left: 0;
+    text-align: center;
+  }
   .ecode-txt-inner  {
     padding-left: 0;
   }
   .ecode-txt-inner p {
     font-size: 1.1rem;
+  }
+}
+@media (max-width: 480px) {
+  .smi-logo {
+    width: 180px;
+  }
+  .showLogo-wrapper img {
+    width: 160px;
+  }
+  .contact-info-wrapper span {
+    display: block;
   }
 }
